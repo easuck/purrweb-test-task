@@ -1,0 +1,58 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    background: var(--Grayscale-01);
+    width: 100%;
+    height: 662px;
+    margin-top: 100px;
+}
+.hero__column{
+    display: flex;
+    flex-direction: column;
+    padding-left: 110px;
+}
+.hero__figure{
+    position: relative;
+}
+.hero__figure--woman{
+    position: absolute;
+}
+.hero__figure--backgroundC{
+    margin-top: 25px;
+}
+.hero__textBold{
+    width: 671px;
+    height: 204px;
+    color: var(--Grayscale-07);
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+.hero__textLight{
+    width: 534px;
+    height: 48px;
+    margin-top: 20px;
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.hero__button{
+    width: 182px;
+    height: 57px;
+    margin-top: 40px;
+    background: var(--Primary-01);
+}
+.hero__button__text{
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

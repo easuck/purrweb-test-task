@@ -17,11 +17,13 @@ header{
     font-weight: 600;
     line-height: 17px;
     text-transform: lowercase;
+    font-feature-settings: 'ss07' on, 'ss02' on, 'ss03' on, 'ss04' on,
+        'ss05' on, 'ss01' on, 'numr' on, 'dnom' on;
 }
 .header__figure{
     margin-right: 5px;
 }
-.header__button--primary{
+.header__button{
     width: 182px;
     height: 57px;
     margin: 7px 60px 7px 0;
