@@ -1,0 +1,37 @@
+header{
+    width: 100%;
+    height: 71px;
+    background: var(--Grayscale-01);
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    margin: 11px 0 11px 60px;
+    display: flex;
+    align-items: center;
+    color: var(--Grayscale-07);
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: lowercase;
+}
+.header__figure{
+    margin-right: 5px;
+}
+.header__button--primary{
+    width: 182px;
+    height: 57px;
+    margin: 7px 60px 7px 0;
+    background: var(--Primary-01);
+}
+.header__button__text{
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

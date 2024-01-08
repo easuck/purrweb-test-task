@@ -1,0 +1,24 @@
+:root{
+    --Grayscale-01: #181818;
+    --Grayscale-07: #FFF;
+    --Primary-01: #954CED;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    display: flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 16px;
+    border: none;
+}
