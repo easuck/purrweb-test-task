@@ -1,0 +1,34 @@
+.percentages{
+    margin-top: 100px;
+    height: 222px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 349.5px;
+    background: var(--Primary-01);
+    gap: 100px;
+}
+.percentages__item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 217px;
+    max-height: 142px;
+}
+.percentages__item__percent{
+    color: var(--Grayscale-07);
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%; 
+}
+.percentages__item__text{
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}

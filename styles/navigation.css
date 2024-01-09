@@ -1,6 +1,5 @@
 nav{
     height: 38px;
-    width: 100%;
     background: var(--Secondary-02);
     display: flex;
     justify-content: flex-start;
