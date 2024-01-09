@@ -1,0 +1,33 @@
+nav{
+    height: 38px;
+    width: 100%;
+    background: var(--Secondary-02);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 60px;
+}
+.nav__item{
+    display: flex;
+    padding: 9px 40px;
+    justify-content: center;
+    align-items: center;
+    background: var(--Secondary-02);
+    color: var(--Grayscale-01);
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.nav__item:hover{
+    border-radius: 20px 20px 0px 0px;
+    background: var(--Grayscale-01);
+    color: var(--Grayscale-07);
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
