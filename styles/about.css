@@ -1,0 +1,104 @@
+.about{
+    margin-top: 100px;
+    position: relative;
+}
+.about__topText{
+    width: 550px;
+    height: 102px;
+    margin-left: 60px;
+    color: var(--Grayscale-07);
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+.about__content{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.about__leftBlock{
+    position: relative;
+    width: 397px;
+    height: 135px;
+    margin-left: 60px;
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.about__leftBlockText{
+    position: absolute;
+    bottom: 10px;
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.about__leftBlockRectangle{
+    position: relative;
+    top: 90px;
+    left: 55px;
+    width: 353.394px;
+    height: 34.438px;
+    transform: rotate(-1.693deg);
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--Primary-02);
+}
+.about__cardsBlock{
+    margin-left: 131px;
+    margin-right: 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 92px 0;
+}
+.about__cardsBlock__row{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+.about__card{
+    display: flex;
+    flex-direction: column;
+    max-width: 337px;
+    max-height: 377px;
+    
+}
+.about__card__textBold{
+    margin-top: 10px;
+    color: var(--Grayscale-07);
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+.about__card__textLight{
+    margin-top: 20px;
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.about__shapes{
+    position: absolute;
+    top: 473px;
+}
+.about__shape--orange{
+    position: relative;
+}
+.about__shape--purple{
+    position: absolute;
+    top: 255px;
+    left: 0;
+}
