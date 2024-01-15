@@ -1,0 +1,102 @@
+.aboveFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 100px 0;
+    background: var(--Grayscale-06);
+}
+.aboveFooter__topBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+    margin: 0 60px;
+    border: 1px solid var(--Grayscale-04);
+    border-radius: 60px;
+}
+.aboveFooter__topBlock__text{
+    color: var(--Grayscale-00);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+.aboveFooter__topBlock__button{
+    display: flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 16px;
+    background: var(--Primary-01);
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.aboveFooter__middleBlock{
+    display: flex;
+    justify-content: space-between;
+}
+.aboveFooter__middleBlock__column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 60px;
+    width: 822px;
+}
+.aboveFooter__middleBlock__column__textBig{
+    color: var(--Grayscale-00);
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+.aboveFooter__middleBlock__column__textSmall{
+    color: var(--Grayscale-00);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    max-width: 537px;
+}
+.aboveFooter__middleBlock__icons{
+    height: 272px;
+    width: 558px;
+    position: relative;
+}
+.aboveFooter__middleBlock__facebook{
+    position: absolute;
+    top: 45px;
+    left: 33px;
+}
+.aboveFooter__middleBlock__twitter{
+    position: absolute;
+    top: 137px;
+    left: 163px;
+}
+.aboveFooter__middleBlock__insta{
+    position: absolute;
+    top: 45px;
+    left: 293px;
+}
+.aboveFooter__middleBlock__tiktok{
+    position: absolute;
+    top: 137px;
+    left: 423px;
+}
+.aboveFooter__bottomBlock{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    gap: 90px;
+}
