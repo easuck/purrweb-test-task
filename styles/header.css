@@ -7,18 +7,6 @@ header{
 }
 .header__logo{
     margin: 11px 0 11px 60px;
-    display: flex;
-    align-items: center;
-    color: var(--Grayscale-07);
-    text-align: center;
-    font-family: "Outfit";
-    font-size: 37px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    text-transform: lowercase;
-    font-feature-settings: 'ss07' on, 'ss02' on, 'ss03' on, 'ss04' on,
-        'ss05' on, 'ss01' on, 'numr' on, 'dnom' on;
 }
 .header__figure{
     margin-right: 5px;

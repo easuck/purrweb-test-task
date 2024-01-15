@@ -4,6 +4,8 @@
     --Grayscale-07: #FFF;
     --Grayscale-06: #F5F5F5;
     --Grayscale-04: #CFCFCF;
+    --Grayscale-03: #B9B9B9;
+    --Grayscale-02: #444444;
     --Primary-01: #954CED;
     --Primary-02: #A64CED;
     --Secondary-02: #FFAA4C;
@@ -27,4 +29,28 @@ button{
     gap: 14px;
     border-radius: 16px;
     border: none;
+    background: var(--Primary-01);
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--Grayscale-07);
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: lowercase;
+    font-feature-settings: 'ss07' on, 'ss02' on, 'ss03' on, 'ss04' on,
+        'ss05' on, 'ss01' on, 'numr' on, 'dnom' on;
+}
+hr{
+    border: 2px solid var(--Grayscale-02);
 }

@@ -1,0 +1,53 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px 20px 60px;
+}
+.footer__topRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__topRow__links{
+    margin-left: 126px;
+    display: flex;
+    gap: 40px;
+}
+.footer__topRow__button{
+    margin-left: 126px;
+}
+.footer__topRow__text{
+    color: var(--Grayscale-07);
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer__topRow__download{
+    margin-left: 40px;
+    display: flex;
+    gap: 20px;
+}
+.footer__hr{
+    margin-top: 30px;
+}
+.footer__bottomRow{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__textSmall--underline{
+    color: var(--Grayscale-03);
+    font-family: "Outfit";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    text-decoration: underline;
+}
+.footer__bottomRow__terms{
+    display: flex;
+    gap: 20px;
+}
