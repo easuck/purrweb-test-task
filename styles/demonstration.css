@@ -1,17 +1,40 @@
 .demonstration{
-    padding: 136px 0;
+    position: relative;
+    overflow: hidden;
 }
 .demonstration__phone{
-    
+    position: absolute;
+    left: 0;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
 }
 .demonstration__textBlock{
+    height: 816px;
     display: flex;
     flex-direction: column;
     gap: 68px;
     justify-content: space-between;
-    overflow: hidden;
 }
-.demonstration__textBlock__row{
+.demonstration__textBlock__row1{
+    position: absolute;
+    top: 136px;
+    right: 500px;
+    display: flex;
+    gap: 20px;
+}
+.demonstration__textBlock__row2{
+    position: absolute;
+    top: 340px;
+    right: 500px;
+    display: flex;
+    gap: 20px;
+}
+.demonstration__textBlock__row3{
+    position: absolute;
+    top: 544px;
+    right: 500px;
     display: flex;
     gap: 20px;
 }
@@ -42,17 +65,17 @@
 }
 @keyframes right{
     0% {
-        transform: translateX(50%);
+        transform: translateX(15%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
 }
 @keyframes left{
     0% {
-        transform: translateX(0);
+        transform: translateX(50%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(15%);
     }
 }
