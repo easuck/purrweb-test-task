@@ -1,0 +1,58 @@
+.demonstration{
+    padding: 136px 0;
+}
+.demonstration__phone{
+    
+}
+.demonstration__textBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.demonstration__textBlock__row{
+    display: flex;
+    gap: 20px;
+}
+.demonstration__textBlock__text{
+    display: inline-block;
+    white-space: nowrap;
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+.demonstration__textBlock__text--green{
+    color: var(--Secondary-01);
+}
+.demonstration__textBlock__text--purple{
+    color: var(--Primary-02);
+}
+.demonstration__textBlock__text--orange{
+    color: var(--Secondary-02);
+}
+.rightAnimation{
+    animation: right 20s linear infinite;
+}
+.leftAnimation{
+    animation: left 20s linear infinite;
+}
+@keyframes right{
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes left{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
