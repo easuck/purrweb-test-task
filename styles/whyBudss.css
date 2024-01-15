@@ -1,0 +1,165 @@
+.whyBudds{
+    height: 1192px;
+    background: var(--Grayscale-01);
+    padding: 100px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+.whyBudds__textBlock{
+    position: relative;
+    width: 664px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.whyBudds__textBig{
+    color: var(--Grayscale-07);
+    font-feature-settings: 'liga' off;
+    font-family: "Outfit";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+}
+.whyBudds__textSmall{
+    position: relative;
+    color: var(--Grayscale-07);
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.whyBudds__rectangle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 386px;
+    height: 34px;
+    transform: rotate(-1.631deg);
+    border-radius: 30px;
+    background: var(--Primary-02);
+    left: 138px;
+    bottom: 3px;
+}
+.whyBudds__cardsBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.whyBudds__row{
+    display: flex;
+    gap: 20px;
+}
+.whyBudds__card--big{
+    position: relative;
+    width: 733px;
+    height: 362px;
+    border-radius: 30px;
+    background: var(--Grayscale-06);
+}
+.whyBudds__card--small{
+    position: relative;
+    width: 547px;
+    height: 362px;
+    border-radius: 30px;
+    background: var(--Grayscale-06);
+}
+.whyBudds__card__textColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+.whyBudds__card__textBig{
+    color: var(--Grayscale-00);
+    font-family: "Outfit";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.whyBudds__card__textSmall{
+    color: var(--Grayscale-00);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.whyBudds__card__textRow--first{
+    padding-left: 329px;
+    padding-right: 40px;
+}
+.whyBudds__card__textRow--second{
+    padding-left: 40px;
+    padding-right: 91px;
+}
+.whyBudds__card__textRow--third{
+    padding-left: 40px;
+    padding-right: 67px;
+}
+.whyBudds__card__textRow--fourth{
+    padding-left: 40px;
+    padding-right: 298px;
+}
+.whyBudds__figure--phone{
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 158.481px;
+    height: 328.741px;
+}
+.whyBudds__figure--shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 388.544px;
+    height: 352.31px;
+}
+.whyBudds__figure--orangePacket{
+    position: absolute;
+    top: 276px;
+    right: 60px;
+}
+.whyBudds__figure--purplePacket{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+.whyBudds__figure--greenPacket{
+    position: absolute;
+    top: 298px;
+    left: 72px;
+}
+.whyBudds__figure--greenGuy{
+    position: absolute;
+    right: 0;
+    top: 279px;
+}
+.whyBudds__figure--purpleGuy{
+    position: absolute;
+    top: 61px;
+    right: 43px;
+}
+.whyBudds__figure--bigStar{
+    position: absolute;
+    top: 65px;
+    left: 212px;
+}
+.whyBudds__figure--smallStar{
+    position: absolute;
+    size: 25px;
+    top: 37px;
+    left: 245px;
+}
+.whyBudds__smallStar{
+    width: 25px;
+}
