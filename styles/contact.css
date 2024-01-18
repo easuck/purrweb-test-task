@@ -11,40 +11,37 @@
     z-index: 1;
     background-color: #00000024;
 }
-.contact__window{
+.contact__form{
     position: relative;
     width: 417px;
-    height: 587px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding: 40px;
     border-radius: 20px;
     background: var(--Grayscale-07);
 }
-.contact__window__cross{
+.contact__form__cross{
     position: absolute;
     top: 16px;
     right: 16px;
     height: 20px;
 }
-.contact__window__inputBlock{
+.contact__form__inputBlock{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-self: stretch;
 }
-.contact__window__inputBlock__line{
+.contact__form__inputBlock__line{
     width: 100%;
-    height: 66px;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    
 }
-.contact__window__inputBlock__line__fieldName{
+.contact__form__inputBlock__line__fieldName{
     color: var(--Grayscale-Black);
     font-family: "Outfit";
     font-size: 14px;
@@ -52,25 +49,32 @@
     font-weight: 500;
     line-height: 22px;
 }
-.contact__window__inputBlock__line__field{
+.contact__form__inputBlock__line__field{
     display: flex;
     height: 40px;
     padding: 10px 16px;
     align-items: center;
-    align-self: stretch;
     border-radius: 14px;
     border: 1px solid var(--Grayscale-20);
     background: var(--Grayscale-07);
 }
-.contact__window__inputBlock__line__field__text{
-    color: var(--Grayscale-30);
+.contact__form__inputBlock__line__field__text{
+    border: none;
+    width: 100%;
+    color: var(--Grayscale-Black);
     font-family: "Outfit";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
 }
-.contact__window__policy--black{
+input::placeholder{
+    color: var(--Grayscale-30);
+}
+.contact__form__inputBlock__line__field__text:focus{
+    outline: none;
+}
+.contact__form__policy--black{
     color: var(--Grayscale-00);
     font-family: "Outfit";
     font-size: 14px;
@@ -78,7 +82,7 @@
     font-weight: 300;
     line-height: 140%;
 }
-.contact__window__policy--purple{
+.contact__form__policy--purple{
     color: var(--Primary-01);
     font-family: "Outfit";
     font-size: 14px;
@@ -88,5 +92,45 @@
     text-decoration-line: underline;
 }
 .contact__button{
-    align-self: start;
+    display: flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 16px;
+    border: none;
+    background: var(--Primary-01);
+    color: var(--Grayscale-07);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.required::after{
+    content: " *";
+    color: var(--Additional-01);
+    font-family: "Outfit";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+.contact__form__inputBlock__line__error{
+    display: none;
+    color: var(--Additional-02);
+    font-family: "Outfit";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contact__form__error{
+    display: none;
+    color: var(--Additional-02);
+    font-family: "Outfit";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

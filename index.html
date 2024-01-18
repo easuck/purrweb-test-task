@@ -20,55 +20,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="contact" id="contact__window">
-        <div class="contact__window">
-            <figure class="contact__window__cross" id="contact__cross">
+    <div class="contact" id="contact__form">
+        <form class="contact__form" id="form">
+            <figure class="contact__form__cross" id="contact__cross">
                 <img src="assets/contact/cross.png"/>
             </figure>
-            <div class="contact__window__inputBlock">
-                <div class="contact__window__inputBlock__line">
-                    <h1 class="contact__window__inputBlock__line__fieldName">Name</h1>
-                    <div class="contact__window__inputBlock__line__field">
-                        <h1 class="contact__window__inputBlock__line__field__text">Enter name</h1>
+            <div class="contact__form__inputBlock">
+                <div class="contact__form__inputBlock__line">
+                    <h1 class="contact__form__inputBlock__line__fieldName required">Name</h1>
+                    <div class="contact__form__inputBlock__line__field" id="nameField">
+                        <input class="contact__form__inputBlock__line__field__text" id="nameInput"
+                        type="text" placeholder="Enter name">
+                    </div>
+                    <h1 class="contact__form__inputBlock__line__error" id="nameError">
+                        This field is required
+                    </h1>
+                </div>
+                <div class="contact__form__inputBlock__line">
+                    <h1 class="contact__form__inputBlock__line__fieldName required">Email</h1>
+                    <div class="contact__form__inputBlock__line__field" id="emailField">
+                        <input class="contact__form__inputBlock__line__field__text" id="emailInput"
+                        type="text" placeholder="Enter email">
+                    </div>
+                    <h1 class="contact__form__inputBlock__line__error" id="emailError">
+                        This field is required
+                    </h1>
+                </div>
+                <div class="contact__form__inputBlock__line">
+                    <h1 class="contact__form__inputBlock__line__fieldName required">Phone number</h1>
+                    <div class="contact__form__inputBlock__line__field" id="phoneField">
+                        <input class="contact__form__inputBlock__line__field__text" id="phoneInput"
+                        type="text" placeholder="1234567890">
+                    </div>
+                    <h1 class="contact__form__inputBlock__line__error" id="phoneError">
+                        This field is required
+                    </h1>
+                </div>
+                <div class="contact__form__inputBlock__line">
+                    <h1 class="contact__form__inputBlock__line__fieldName">Company</h1>
+                    <div class="contact__form__inputBlock__line__field">
+                        <input class="contact__form__inputBlock__line__field__text"
+                        type="text" placeholder="Enter company">                    
                     </div>
                 </div>
-                <div class="contact__window__inputBlock__line">
-                    <h1 class="contact__window__inputBlock__line__fieldName">Email</h1>
-                    <div class="contact__window__inputBlock__line__field">
-                        <h1 class="contact__window__inputBlock__line__field__text">Enter email</h1>
-                    </div>
-                </div>
-                <div class="contact__window__inputBlock__line">
-                    <h1 class="contact__window__inputBlock__line__fieldName">Phone number</h1>
-                    <div class="contact__window__inputBlock__line__field">
-                        <h1 class="contact__window__inputBlock__line__field__text">1234567890</h1>
-                    </div>
-                </div>
-                <div class="contact__window__inputBlock__line">
-                    <h1 class="contact__window__inputBlock__line__fieldName">Company</h1>
-                    <div class="contact__window__inputBlock__line__field">
-                        <h1 class="contact__window__inputBlock__line__field__text">Enter company</h1>
-                    </div>
-                </div>
-                <div class="contact__window__inputBlock__line">
-                    <h1 class="contact__window__inputBlock__line__fieldName">Website/Store URL</h1>
-                    <div class="contact__window__inputBlock__line__field">
-                        <h1 class="contact__window__inputBlock__line__field__text">Enter Website/Store URL</h1>
+                <div class="contact__form__inputBlock__line">
+                    <h1 class="contact__form__inputBlock__line__fieldName">Website/Store URL</h1>
+                    <div class="contact__form__inputBlock__line__field">
+                        <input class="contact__form__inputBlock__line__field__text"
+                        type="text" placeholder="Enter Website/Store URL">
                     </div>
                 </div>
             </div>
-            <h1 class="contact__window__policy--black">
-                By submitting this form you are agreeing to Budss’s 
-                <span class="contact__window__policy--purple">Privacy Policy</span> 
-                    and 
-                <span class="contact__window__policy--purple">Terms of Use</span>
+            <h1 class="contact__form__error" id="form__error">
+                Please fill in all required fields
             </h1>
-            <button class="contact__button">Contact sales</button>
-        </div>
+            <h1 class="contact__form__policy--black">
+                By submitting this form you are agreeing to Budss’s 
+                <span class="contact__form__policy--purple">Privacy Policy</span> 
+                    and 
+                <span class="contact__form__policy--purple">Terms of Use</span>
+            </h1>
+            <input class="contact__button"
+            type="submit" value="Contact sales">
+        </form>
     </div>
-
-
-
 
     <nav>
         <h1 class="nav__item">For Business</h1>
@@ -83,7 +98,7 @@
                 budss
             </figcaption>
         </div>
-        <button class="header__button">
+        <button class="header__button" id="header__button">
             <h1 class="header__button__text">Contact sales</h1>
         </button>
     </header>
@@ -296,7 +311,7 @@
     <section class="aboveFooter">
         <div class="aboveFooter__topBlock">
             <h1 class="aboveFooter__topBlock__text">Let  Your Business Grow</h1>
-            <button class="aboveFooter__topBlock__button">Contact sales</button>
+            <button class="aboveFooter__topBlock__button" id="aboveFooter__button">Contact sales</button>
         </div>
         <div class="aboveFooter__middleBlock">
             <div class="aboveFooter__middleBlock__column">
@@ -355,7 +370,7 @@
                 <h1 class="footer__topRow__text">For Business</h1>
                 <h1 class="footer__topRow__text">For Customers</h1>
             </div>
-            <button class="footer__topRow__button">Contact sales</button>
+            <button class="footer__topRow__button" id="footer__button">Contact sales</button>
             <div class="footer__topRow__download">
                 <figure>
                     <img src="assets/footer/appstore.png"/>
