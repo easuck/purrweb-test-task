@@ -188,4 +188,8 @@ input::placeholder{
     top: 16px;
     right: 16px;
 }
+.phoneField{
+    display: flex;
+    gap: 10px;
+}
 
