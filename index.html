@@ -15,12 +15,13 @@
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/demonstration.css">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/cookie.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="contact" id="contact__form">
+    <section class="contact" id="contact">
         <form class="contact__form" id="form">
             <figure class="contact__form__cross" id="contact__cross">
                 <img src="assets/contact/cross.png"/>
@@ -81,9 +82,37 @@
                 <span class="contact__form__policy--purple">Terms of Use</span>
             </h1>
             <input class="contact__button"
-            type="submit" value="Contact sales">
+            type="submit" value="Contact sales" id="submit">
         </form>
-    </div>
+    </section>
+
+    <section class="thanks" id="thanks">
+        <div class="thanks__window">
+            <img class="thanks__window__cross" id="thanks__cross" src="/assets/contact/cross.png"/>
+            <img class="thanks__window__dude" src="assets/thanks_dude.png"/>
+            <h1 class="thanks__window__topText">Thank you</h1>
+            <h1 class="thanks__window__middleText">Thank you, we have received your application and
+                will contact you soon!
+            </h1>
+            <button class="thanks__window__button" id="thanks__button">Superb!</button>
+        </div>
+    </section>
+
+    <section class="cookie" id="cookie">
+        <div class="cookie__window">
+            <figure class="cookie__window__cross" id="cookie__cross">
+                <img src="assets/contact/cross.png"/>
+            </figure>
+            <h1 class="cookie__window__text">
+                This website uses cookies to ensure you get the best experience on our website.
+                They also allow us to analyze user behavior in order to constantly improve the website for you.
+            </h1>
+            <div class="cookie__window__buttons">
+                <button class="cookie__window__buttons--accept" id="cookie__accept">Accept</button>
+                <button class="cookie__window__buttons--decline" id="cookie__decline">Decline</button>
+            </div>
+        </div>
+    </section>
 
     <nav>
         <h1 class="nav__item">For Business</h1>
@@ -390,6 +419,7 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/markupTask.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/cookie.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const contactWindow = document.getElementById("contact__form");
+const contactWindow = document.getElementById("contact");
 const contactCross = document.getElementById("contact__cross");
 const heroButton = document.getElementById("hero__button");
 const headerButton = document.getElementById("header__button");
@@ -33,14 +33,6 @@ const nameField = document.getElementById("nameField");
 const emailField = document.getElementById("emailField");
 const phoneField = document.getElementById("phoneField");
 
-const initialFormError = document.getElementById("form__error");
-const initialNameError = document.getElementById("nameError");
-const initialEmailError = document.getElementById("emailError");
-const initialPhoneError = document.getElementById("phoneError");
-const initialNameField = document.getElementById("nameField");
-const initialEmailField = document.getElementById("emailField");
-const initialPhoneField = document.getElementById("phoneField");
-
 form.addEventListener('submit', (e) => {
     let errorCount = 0;
     if(nameInput.value === '' || nameInput.value == null){
@@ -64,6 +56,11 @@ form.addEventListener('submit', (e) => {
     if(errorCount != 0){
         formError.style.display = "block";
     }
+    if(errorCount == 0){
+        e.preventDefault();
+        closeContactWindowAndReset();
+        openThanksWindow();
+    }
 })
 
 function defaultStyles(){
@@ -75,3 +72,18 @@ function defaultStyles(){
     phoneField.style.border = "1px solid var(--Grayscale-20)";
     formError.style.display = "none";
 }
+
+const thanksWindow = document.getElementById("thanks");
+const thanksCross = document.getElementById("thanks__cross");
+const thanksButton = document.getElementById("thanks__button");
+
+function closeThanksWindow(){
+    thanksWindow.style.display = "none";
+}
+
+function openThanksWindow(){
+    thanksWindow.style.display = "flex";
+}
+
+thanksCross.onclick = closeThanksWindow;
+thanksButton.onclick = closeThanksWindow;
