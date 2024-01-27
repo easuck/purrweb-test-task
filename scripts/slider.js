@@ -33,7 +33,8 @@ next.addEventListener('click', nextSlide);
 function nextSlide(){
     next.style.pointerEvents = "none";
     slides[counter].style.animation = "next1 0.5s";
-    removeActive();
+    removeActiveSlides();
+    removeActiveDots();
     if(counter >= slides.length - 1){
         counter = 0;
     }
@@ -42,6 +43,7 @@ function nextSlide(){
     }
     slides[counter].style.animation = "next2 0.5s";
     slides[counter].classList.add("active");
+    dots[counter].classList.add("dotActive");
     setTimeout(()=>{
         next.style.pointerEvents = "auto";
     }, 500);
@@ -52,7 +54,8 @@ prev.addEventListener('click', prevSlide);
 function prevSlide(){
     prev.style.pointerEvents = "none";
     slides[counter].style.animation = "prev1 0.5s";
-    removeActive();
+    removeActiveSlides();
+    removeActiveDots();
     if(counter == 0){
         counter = slides.length - 1;
     }
@@ -61,23 +64,32 @@ function prevSlide(){
     }
     slides[counter].style.animation = "prev2 0.5s";
     slides[counter].classList.add("active");
+    dots[counter].classList.add("dotActive");
     setTimeout(()=>{
         prev.style.pointerEvents = "auto";
     }, 500);
     console.log(counter);
 }
 
-function removeActive(){
+function removeActiveSlides(){
     slides.forEach((slide)=>{
         slide.classList.remove("active");
     })
 }
 
+function removeActiveDots(){
+    dots.forEach((dot)=>{
+        dot.classList.remove("dotActive");
+    })
+}
+
 slides.forEach((slide, slideIndex) => {
     dots[slideIndex].addEventListener('click', ()=>{
-        removeActive();
+        removeActiveSlides();
+        removeActiveDots();
         counter = slideIndex;
         console.log(counter);
         slide.classList.add("active");
+        dots[slideIndex].classList.add("dotActive");
     })
 })

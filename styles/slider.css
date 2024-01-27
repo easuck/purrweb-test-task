@@ -98,13 +98,13 @@ h3{
     height: 20px;
     font-size: 25px;
     background: transparent;
-}
-.dot::before{
-    content: '•';
     color: black;
     opacity: 0.25;
 }
-.dot:hover::before{
+.dot:hover{
+    opacity: 0.75;
+}
+.dotActive{
     opacity: 0.75;
 }
 @keyframes next1{
