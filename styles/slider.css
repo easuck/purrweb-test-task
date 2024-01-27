@@ -41,14 +41,38 @@ body{
     left: -100%;
 }
 .next{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     position: absolute;
     top: 65px;
-    right: -20px;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 241, 241);
+    color: var(--primary);
+    cursor: pointer; 
+}
+.next:hover{
+    background: white;
 }
 .prev{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     position: absolute;
     top: 65px;
-    left: -20px;
+    left: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 241, 241);
+    color: var(--primary);
+    cursor: pointer;
+}
+.prev:hover{
+    background: white;
 }
 h3{
     color: var(--primary);
@@ -61,12 +85,12 @@ h3{
         left: 0%;
     }
     to{
-        left: -100%;
+        left: -105%;
     }
 }
 @keyframes next2{
     from{
-        left: 100%;
+        left: 105%;
     }
     to{
         left: 0%;
@@ -77,12 +101,12 @@ h3{
         left: 0%;
     }
     to{
-        left: 100%;
+        left: 105%;
     }
 }
 @keyframes prev2{
     from{
-        left: -100%;
+        left: -105%;
     }
     to{
         left: 0%;
