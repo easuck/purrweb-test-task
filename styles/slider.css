@@ -40,22 +40,26 @@ body{
     top: 0;
     left: -100%;
 }
+button{
+    border: none;
+    cursor: pointer; 
+}
 .next{
     width: 20px;
     height: 20px;
     border-radius: 50%;
     position: absolute;
     top: 65px;
-    right: -25px;
+    right: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(241, 241, 241);
+    background: white;
+    opacity: 0.75;
     color: var(--primary);
-    cursor: pointer; 
 }
 .next:hover{
-    background: white;
+    opacity: 1;
 }
 .prev{
     width: 20px;
@@ -63,22 +67,45 @@ body{
     border-radius: 50%;
     position: absolute;
     top: 65px;
-    left: -25px;
+    left: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(241, 241, 241);
+    background: white;
+    opacity: 0.75;
     color: var(--primary);
-    cursor: pointer;
 }
 .prev:hover{
-    background: white;
+    opacity: 1;
 }
 h3{
     color: var(--primary);
     font-size: 36px;
     line-height: 100px;
     text-align: center;
+}
+.dots__container{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: -40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    background: transparent;
+}
+.dot::before{
+    content: '•';
+    color: black;
+    opacity: 0.25;
+}
+.dot:hover::before{
+    opacity: 0.75;
 }
 @keyframes next1{
     from{
